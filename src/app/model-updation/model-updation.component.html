@@ -1,0 +1,52 @@
+
+<h1 class="header">Update Module</h1>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+    <div class="pb20">
+        <div>
+            <label for="country">
+                country
+            </label>
+        </div>
+        <div>
+            <input id="country" type="text" formControlName="country">
+        </div>
+
+    </div>
+    <div class="pb20">
+        <div>
+            <label for="Modal">
+                Modal
+            </label>
+        </div>
+        <div>
+            <input id="Modal" type="text" formControlName="Modal">
+        </div>
+
+    </div>
+    <div class="pb20">
+        <div>
+            <label for="Vehicle_Type">
+                Vehicle_Type
+            </label>
+        </div>
+        <div>
+            <input id="Vehicle_Type" type="text" formControlName="Vehicle_Type">
+        </div>
+
+    </div>
+    <div class="pb20">
+        <div>
+            <label for="Unit">
+                Unit
+            </label>
+        </div>
+        <div>
+            <input id="Unit" type="text" formControlName="Unit">
+        </div>
+
+    </div>
+
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+
+
+</form>

@@ -1,0 +1,39 @@
+<table mat-table [dataSource]="data" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="ID">
+    <th mat-header-cell *matHeaderCellDef> ID </th>
+    <td mat-cell *matCellDef="let element"> {{element.ID}} </td>
+  </ng-container>
+  <ng-container matColumnDef="country">
+    <th mat-header-cell *matHeaderCellDef> country </th>
+    <td mat-cell *matCellDef="let element"> {{element.country}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Modal">
+    <th mat-header-cell *matHeaderCellDef> Modal </th>
+    <td mat-cell *matCellDef="let element"> {{element.Modal}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Vehicle_Type">
+    <th mat-header-cell *matHeaderCellDef> Vehicle_Type </th>
+    <td mat-cell *matCellDef="let element"> {{element.Vehicle_Type}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Unit">
+    <th mat-header-cell *matHeaderCellDef> Unit </th>
+    <td mat-cell *matCellDef="let element"> {{element.Unit}} </td>
+  </ng-container>
+  <ng-container matColumnDef="date">
+    <th mat-header-cell *matHeaderCellDef> date </th>
+    <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Quarter">
+    <th mat-header-cell *matHeaderCellDef> Quarter </th>
+    <td mat-cell *matCellDef="let element"> {{element.Quarter}} </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
